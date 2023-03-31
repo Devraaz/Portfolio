@@ -1,0 +1,17 @@
+body{
+    height: auto;
+    background: linear-gradient(rgb(4, 4, 20) , #252429);
+}
+.copyright{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    font-family: 'Cutive Mono', monospace;
+}
+
+.section5 .copyright{
+    font-size: 15px;;
+}

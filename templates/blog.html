@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+
+{% block title %} Blogs {% endblock title %} 
+
+
+{% block head %}
+
+<style>
+    .float-end{
+        width: 40%;
+    }
+    .dark{
+      background-color: #12111a;
+      color: #d0cede;
+    }
+    @media (max-width: 800px){
+      .float-end{
+        width: 100%;
+      }
+    }
+</style>
+{% endblock head %}
+
+
+
+
+{% block body %}
+
+<div class="container inscreen">
+    <div class="container">
+      
+    </div>
+            {% for blog in blog %}
+
+            <div class="card dark mx-3 my-3 px-3 py-3">
+                <div class="card-body">
+                  <h5 class="card-title">{{blog.b_head}}</h5>
+                  <img src='{{blog.image}}' class='float-end mx-2 my-2' >
+                  <p class="card-text">{{blog.b_body}}</p>
+                </div>
+              </div>
+
+                
+            {% endfor %}
+
+</div>
+
+
+<script>
+  let dark = document.querySelector('.dark')
+
+
+  function change(){
+    dark.classList.toggle('dark')
+  }
+</script>
+{% endblock body %}
+

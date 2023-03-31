@@ -1,0 +1,226 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devraj Dora</title>
+    <link rel="icon" type="image/x-icon" href="static/media/photos/LOGO.png">
+    <link rel="stylesheet" href="static/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Julee&family=Nunito&family=Tillana&family=Quicksand:wght@300&family=Marck+Script&family=Shantell+Sans&family=Bad+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/index.css">
+    
+</head>
+<body>
+    
+        <nav>
+            <a href=" "><img src="static/media/photos/LOGO.png" class="logo"></a>
+            
+            <div class="openMenu"> <i class="fa fa-bars" aria-hidden="true"></i></div>
+            <ul class="mainMenu">
+                <li><a href="#greet2">About</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="project">Project</a></li>
+                <li><a href="#greet5">Feedback</a></li>
+                <div class="closeMenu" ><i class="fa fa-times" aria-hidden="true"></i></div>
+            </ul>
+        </nav>
+        
+        <section>
+            <div class="text"><h3><span id="u_name"> </span></h3> My Name is Devraj. <br><i> A FrontEnd Designer and Developer</i></div>
+            <div class="landing">
+                <img src="static/media/photos/coding.gif" id=".img" >
+            </div>
+            
+        </section>
+
+        <div class="section1" >
+            <img src="static/media/photos/desktop_base-removebg-preview.png" id="base">           
+            <div ID="greet">
+
+                <a href="https://codepen.io/devraaz" target="#"><i class="fa fa-codepen" id="windows" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/devraj-dora-851595162/"target="#"><i class="fa fa-linkedin" id="linkedin" aria-hidden="true"></i></a>
+                <span>WELCOME TO MY DESKTOP</span>
+                <a href="https://github.com/Devraaz" target="#"><i class="fa fa-github" id="git" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/devarts445" target="#"><i class="fa fa-instagram" id="insta" aria-hidden="true"></i></a>
+            </div>
+        </div>
+   
+        <div class="section2">
+            <div id="greet2" style="color: black;">ABOUT</div>
+            <div class="about" >
+                <p>&nbsp;&nbsp;&nbsp;Hii! My name is "Devraj Dora". I'm a Web Designer cum Portrait Artist.  
+                    I've completed my graduation and currently I'm working as a Freelancer. You can move around this 
+                    website and if you like it do give us the Feedback. Beside Web Designing 
+                    I love spending time working on my Artworks, Sketching, Playing Flute, Reading Books, Learning 
+                    something New. <br>
+                    If you wish to make your website from me :)  Just contact me as soon as possible through any of my links.
+
+                    
+                </p>
+                <img src="static/media/photos/mouse1.png" id="mouse1">
+            </div>
+        </div>
+
+        <div class="section3"style="background-image: url('static/media/photos/bg1.png');">
+            <div id="greet3" style="color: black;">SKILLS</div><br><br>
+            <div class="auto_text"><span class="auto_type"></span></div><br><br>
+            <img src="static/media/photos/keyboard3.png" id="keyboard">
+        </div>
+
+        <div class="section4" style="background-image: url('static/media/photos/bg2.png');" >
+            <div id="greet4" style="color: black;">GALLERY</div><br>
+            <div class="cpu">
+                <img src="static/media/photos/cpu3.png" id="cpu">
+                <div class="gallery">
+                    <img src="static/media/photos/art1.jpg" data-aos="fade-right" alt="Art1" id="art1">
+                    <img src="static/media/photos/art2.jpg" data-aos="fade-down" alt="Art2" id="art2">
+                    <img src="static/media/photos/art5.jpg" data-aos="fade-left" alt="Art3" id="art3">
+                    <img src="static/media/photos/art3.jpg" data-aos="fade-up" alt="Art4" id="art4">
+                </div>
+            </div>
+        </div>
+        
+        <div class="section5" style="background: url('static/media/photos/bg5.png'); background-size: cover; background-position: center;">
+            <span id="greet5" >CONTACT ME</span>
+            <div class="connect">
+                    <div class="social_links">
+                        <a href="https://codepen.io/devraaz" target="#"><i class="fa fa-codepen"  aria-hidden="false" ></i></a>
+                        <a href="https://www.linkedin.com/in/devraj-dora-851595162/"target="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://github.com/Devraaz" target="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/devarts445" target="#"><i class="fa fa-instagram"  aria-hidden="true"></i></a>
+            
+                    </div>
+                    
+                        <form method="POST" action="">
+                            {% csrf_token %}        
+                            <label for="fname">Full Name:</label>
+                            <input type="text" id="fname" name="fname" placeholder="Your name..">
+                            <label for="fname">Email: </label>
+                            <input type="email" id="email" name="email" placeholder="Your Email.."><br>
+                            <label for="subject">Subject:</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.."></textarea><br>
+
+                        
+                            <button type="submit">Submit</button>>
+
+                        </form>
+                    
+            </div>
+            <div class="copyright">
+                Copyright © 2020 DEVRAJ DORA, All Rights Reserved.
+            </div>
+        </div>
+        
+    <script>
+        let name = prompt("Please Enter Your Name");
+        document.getElementById('u_name').innerHTML = "Hii " + name; 
+
+    </script>
+        
+    <script src="static/animejs/lib/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        let mainMenu = document.querySelector(".mainMenu");
+        let openMenu = document.querySelector(".openMenu");
+        let closeMenu = document.querySelector(".closeMenu");
+        let desk = document.getElementById('base');
+        let section = document.querySelector('section');
+        let greet = document.querySelector('#greet');
+
+        let git =document.querySelector("#git");
+        let windows = document.querySelector("#windows");
+        let insta = document.querySelector("#insta");
+        let linked =document.querySelector("#linkedin");
+
+        let mouse = document.querySelector("#mouse1")
+        let keyboard = document.querySelector("#keyboard")
+        let cpu = document.querySelector("#cpu");
+
+        openMenu.addEventListener('click', open)
+        closeMenu.addEventListener('click', close)
+        window.addEventListener("scroll", scrr);
+
+        function open(){
+            mainMenu.style.display = 'flex';
+            mainMenu.style.top = '0';
+            mainMenu.style.transition = '0.5s';
+        }
+        function close(){
+            mainMenu.style.top = '-110%';
+        }
+
+        window.onload = anime({
+            targets: '.logo',
+            translateX: 200,
+            direction: 'alternate',
+        });
+        
+        
+        function scrr(){
+            let scroll= window.scrollY;
+            section.style.bottom = scroll*2+"px";
+            greet.style.bottom = scroll*0.5 +"px";
+            git.style.bottom = scroll*0.6+'px';
+            insta.style.bottom = scroll*0.9+'px';
+            linked.style.bottom = scroll*0.6+'px';
+            windows.style.bottom = scroll*0.9+'px';
+
+
+            let mousePosition = mouse.getBoundingClientRect().top;
+            let keyboardPosition = keyboard.getBoundingClientRect().top;
+            let cpuPosition = cpu.getBoundingClientRect().top;
+            let screenPos = window.innerHeight;
+
+            if(mousePosition < screenPos/2){
+                mouse.classList.add('about_hover')
+            }
+            else{
+                mouse.classList.remove('about_hover')
+            }
+            if(keyboardPosition < screenPos/2){
+                keyboard.classList.add('about_hover')
+            }
+            else{
+                
+                keyboard.classList.remove('about_hover')
+
+            }
+            if(cpuPosition < screenPos/2){
+                cpu.classList.add('about_hover')
+                
+            }
+            else{
+                
+                cpu.classList.remove('about_hover')
+
+            }
+        }
+        
+
+        var typed = new Typed(".auto_type", {
+            strings: ["HTML, CSS, Javascript","Web Designing","Python","Django, Pandas, Numpy","Trading and Algo Trading","Portrait Artist"],
+            typeSpeed: 30,
+            backSpeed: 30,
+            loop: true
+        })
+        
+    </script>
+    
+</body>
+<script>
+ 
+    
+</script>
+</html>
